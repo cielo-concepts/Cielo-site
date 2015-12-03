@@ -90,6 +90,15 @@ strong {
 	color: $white;
 	&:hover {
 		color: $white;
+		background: $secondary-accent;
+	}
+}
+
+.t-btn-secondary {
+	background: $secondary-accent;
+	color: $white;
+	&:hover {
+		color: $white;
 		background: $accent;
 	}
 }
