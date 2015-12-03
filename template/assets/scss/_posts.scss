@@ -248,8 +248,12 @@
 		margin-right: 40px;
 		margin-left: 40px;
 		opacity: 0.5;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
 		&:hover {
 			opacity: 1;
+			filter: grayscale(0);
+			-webkit-filter: grayscale(0);
 		}
 	}
 }
