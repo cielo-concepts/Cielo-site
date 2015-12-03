@@ -9,19 +9,20 @@ $serif:             'Roboto Slab', serif;
 
 
 // color variables
-$accent2:				  #eb7a5c;
-$accent:         #99ccff;
-$base-color:			#444;
-$heading-color:		#000;
-$light-color:			#a2a2a2;
-$light-bg:				#f3f3f3;
-$dark-bg:         #000;
-$body-bg:         #fff;
+$white:             #fff;
+$black:             #000;
 
-$border-color:    #ddd;
+$accent:            #99ccff;
+$secondary-accent:  #eb7a5c;
+$base-color:        #444;
+$heading-color:     #000;
+$light-color:       #a2a2a2;
+$light-bg:          #f3f3f3;
+$dark-bg:           #000;
+$body-bg:           #fff;
+$gray-bg:           darken($white, 25%);
 
-$white:           #fff;
-$black:           #000;
+$border-color:      #ddd;
 
 // Baseline
 $base:					  20px;
