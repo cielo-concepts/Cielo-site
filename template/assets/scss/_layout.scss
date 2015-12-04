@@ -50,7 +50,7 @@
 .logo {
 	float: left;
 	margin: 17px 17px 17px 0;
-	width: 70px;
+	width: auto;
 	.site-brand {
 		font-size: 20px;
 		text-transform: uppercase;
@@ -58,7 +58,7 @@
 		letter-spacing: 3px;
 		
 		img {
-			width: 100%;
+			// width: 100%;
 		}
 	}
 }
@@ -90,6 +90,7 @@ ul.main-menu {
 			letter-spacing: 2px;
 			display: inline-block;
 			color: $white;
+			// text-shadow: 1px 1px 1px $white;
 			padding: 10px 0;
 			i {
 				margin-left: 4px;
@@ -284,12 +285,14 @@ ul.main-menu {
 
 .slider-caption {
 	text-align: center;
+	// background-color: rgba($gray-bg, 0.4);
 
 	h1 {
 		font-size: 55px;
 		font-weight: 100 !important;
 		letter-spacing: 6px;
-		color: #fff;
+		color: $white;
+		// text-shadow: 1px 1px 1px $white;
 		margin-bottom: 20px !important;
 	}
 
