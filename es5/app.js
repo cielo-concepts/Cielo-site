@@ -46,13 +46,15 @@ app.use((0, _morgan2.default)('dev'));
 app.use(_bodyParser2.default.json());
 app.use(_bodyParser2.default.urlencoded({ extended: false }));
 app.use((0, _cookieParser2.default)());
-app.use(_express2.default.static(_path2.default.join(__dirname, '../template/assets')));
+app.use(_express2.default.static(_path2.default.join(__dirname, '../assets')));
 
-app.use('/', function (req, res) {
-  _fs2.default.readFile(__dirname + '/../template/index.html', 'utf8', function (err, text) {
-    res.send(text);
-  });
-});
+// app.use('/', ((req, res) => {
+//     fs.readFile(__dirname + '/../views/index.html', 'utf8', (err, text) => {
+//       res.send(text);
+//     })
+//   })
+// );
+app.use('/', _index2.default);
 // app.use('/users', users);
 
 // using arrow syntax
@@ -87,3 +89,4 @@ var server = app.listen(app.get('port'), function () {
 });
 
 module.exports = app;
+//# sourceMappingURL=app.js.map
