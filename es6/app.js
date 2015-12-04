@@ -21,14 +21,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../template/assets')));
+app.use(express.static(path.join(__dirname, '../assets')));
 
-app.use('/', ((req, res) => {
-    fs.readFile(__dirname + '/../template/index.html', 'utf8', (err, text) => {
-      res.send(text);
-    })
-  }) 
-);
+// app.use('/', ((req, res) => {
+//     fs.readFile(__dirname + '/../views/index.html', 'utf8', (err, text) => {
+//       res.send(text);
+//     })
+//   }) 
+// );
+app.use('/', routes);
 // app.use('/users', users);
 
 // using arrow syntax
