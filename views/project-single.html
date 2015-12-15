@@ -86,14 +86,16 @@
 					<div class="portfolio-header mb-4">
 						<div class="row">
 							<div class="col-md-4 col-sm-4 mb-3">
-								<h5 class="mb-2 mt-1">Share proejct on:</h5>
+								<h5 class="mb-2 mt-1">Technology:</h5>
 								<div class="post-share">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<ul>
+										<li>NodeJS</li>
+										<li>ReactJS</li>
+										<li>Sass CSS</li>
+									</ul>
 								</div>
 							</div> <!-- .col-md-4 -->
-							<div class="col-md-8 col-sm-8">
+							<div id="portfolio-summary" class="col-md-8 col-sm-8">
 								<h3 class="portfolio-title">Malena Manuel</h3>
 								<p><span class="drop-cap">R</span>etro listicle vegan 3 wolf moon next level, Bushwick Echo Park. Irony four loko Wes Anderson, sartorial tofu mlkshk pork belly crucifix Pitchfork bespoke distillery cred actually. Intelligentsia mixtape lumbersexual High Life YOLO, craft beer beard. Pickled tote bag twee scenester mumblecore pop-up craft beer Austin Neutra 8-bit. Cronut normcore blog post-ironic, church-key keytar pop-up Bushwick farm-to-table meggings butcher.</p>
 							</div>
@@ -353,7 +355,6 @@
     $(document).ready(function() {
       var projectName = location.search.substring(location.search.indexOf('?') + 1).split('=')[1];
       $.getJSON('/portfolio/detail/' + projectName, function(data) {
-        console.log(data);
 
         var portfolioSingleTemplate = "<div class=\"container\">" +
           "<div class=\"row\">" +
@@ -369,8 +370,16 @@
         $('#portfolio-single .parallax-bg')
           .css('background-image', 'url(' + data.titleImage.src + ')')
           .html(portfolioHtml);
+	
+				document.title = data.title;
 
-      })
+				var portfolioSummaryTemplate = "<h3 class=\"portfolio-title\">{{title}}</h3>" +
+					"<p>{{topParagraph}}</p>";
+
+				var portfolioSummaryHtml = Mustache.to_html(portfolioSummaryTemplate, data);
+
+				$('#portfolio-summary').html(portfolioSummaryHtml);
+      });
 
     });
 

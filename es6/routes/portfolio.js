@@ -9,9 +9,7 @@ let router = express.Router();
 
 let portfolio = {
 	index: ((req, res) => {
-    fs.readFile(__dirname + '/../../views/project-single.html', 'utf8', (err, text) => {
-      res.send(text);
-    })
+    res.render('portfolio');
   }),
 	detail: ((req, res) => {
     let name = req.params.name;

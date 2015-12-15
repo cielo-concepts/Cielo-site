@@ -22,9 +22,7 @@ var router = _express2.default.Router();
 
 var portfolio = {
    index: function index(req, res) {
-      _fs2.default.readFile(__dirname + '/../../views/project-single.html', 'utf8', function (err, text) {
-         res.send(text);
-      });
+      res.render('portfolio');
    },
    detail: function detail(req, res) {
       var name = req.params.name;
