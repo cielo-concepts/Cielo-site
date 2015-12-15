@@ -8,7 +8,7 @@ import bodyParser   from 'body-parser';
 import fs           from 'fs';
 
 import routes       from './routes/index';
-// import users        from './routes/users'
+import portfolio    from './routes/portfolio';
 
 //using let
 let app = express();
@@ -23,14 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../assets')));
 
-// app.use('/', ((req, res) => {
-//     fs.readFile(__dirname + '/../views/index.html', 'utf8', (err, text) => {
-//       res.send(text);
-//     })
-//   }) 
-// );
 app.use('/', routes);
-// app.use('/users', users);
+app.use('/portfolio', routes);
 
 // using arrow syntax
 app.use((req, res, next) => {

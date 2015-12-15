@@ -1050,6 +1050,9 @@ ul.main-menu li:hover > ul {
   background: #99ccff;
   margin-top: 5px;
 }
+.widget-title h2.negative:after {
+  background: #eb7a5c;
+}
 .parallax-section .widget-title h2 {
   color: #fff;
   border-color: #b7b7b7;
@@ -1390,6 +1393,7 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
   -moz-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
   box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
+  min-height: 300px;
 }
 .services-type-2 .service-post:hover .s-hover {
   height: 100%;
@@ -1419,6 +1423,9 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
   -webkit-transition: width, 250ms;
   transition: width, 250ms;
 }
+.services-type-2 .s-hover.negative {
+  background: #eb7a5c;
+}
 .services-type-2 .s-content {
   position: relative;
   z-index: 13;
@@ -1441,6 +1448,12 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
 .services-type-2 .s-icon i {
   font-size: 18px;
   color: #99ccff;
+}
+.services-type-2 .s-icon.negative {
+  border: 2px solid #eb7a5c;
+}
+.services-type-2 .s-icon.negative i {
+  color: #eb7a5c;
 }
 .services-type-2 .s-title {
   font-size: 16px;

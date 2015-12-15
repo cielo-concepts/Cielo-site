@@ -426,6 +426,11 @@ ul.main-menu {
 			background:$accent;
 			margin-top: 5px;
 		}
+		
+		&.negative:after {
+			background: $secondary-accent;
+		}
+
 	}
 
 	.parallax-section & {
