@@ -1004,28 +1004,28 @@ ul.main-menu li:hover > ul {
   overflow: hidden;
 }
 #slide-1 .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #slide-2 .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #fun-fact .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #testimonials .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #portfolio-single .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #shortcodes .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #blog .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #page-sample .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 
 .widget-title {
@@ -1393,7 +1393,6 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
   -moz-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
   box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
-  min-height: 300px;
 }
 .services-type-2 .service-post:hover .s-hover {
   height: 100%;

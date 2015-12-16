@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../assets')));
 
 app.use('/', routes);
-app.use('/portfolio', routes);
+app.use('/portfolio/:name', routes);
 
 // using arrow syntax
 app.use((req, res, next) => {

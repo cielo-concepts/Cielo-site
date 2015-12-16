@@ -21,15 +21,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var router = _express2.default.Router();
 
 var portfolio = {
-   index: function index(req, res) {
-      res.render('portfolio');
-   },
-   detail: function detail(req, res) {
-      var name = req.params.name;
+  index: function index(req, res, next) {
+    var name = req.params.name;
+    if (name) {
       var portfolioDetail = _portfolio2.default[name];
-      console.log(portfolioDetail);
-      res.json(portfolioDetail);
-   }
+      res.render('portfolio', portfolioDetail);
+    } else {
+      var err = new Error('Not Found');
+      err.status = 404;
+      next(err);
+    }
+  },
+  detail: function detail(req, res) {
+    var name = req.params.name;
+    var portfolioDetail = _portfolio2.default[name];
+    console.log(portfolioDetail);
+    res.json(portfolioDetail);
+  }
 };
 
 module.exports = portfolio;

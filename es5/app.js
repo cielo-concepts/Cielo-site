@@ -51,7 +51,7 @@ app.use((0, _cookieParser2.default)());
 app.use(_express2.default.static(_path2.default.join(__dirname, '../assets')));
 
 app.use('/', _index2.default);
-app.use('/portfolio', _index2.default);
+app.use('/portfolio/:name', _index2.default);
 
 // using arrow syntax
 app.use(function (req, res, next) {

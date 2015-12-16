@@ -21,7 +21,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var router = _express2.default.Router();
 
 router.get('/', _pages2.default.index);
-router.get('/portfolio', _portfolio2.default.index);
+router.get('/portfolio/:name', _portfolio2.default.index);
 router.get('/portfolio/detail/:name', _portfolio2.default.detail);
 
 module.exports = router;
