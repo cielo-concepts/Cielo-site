@@ -370,36 +370,36 @@ ul.main-menu {
     overflow: hidden;
 
     #slide-1 & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
     #slide-2 & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
 
     #fun-fact & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
     #testimonials & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
     #portfolio-single & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
     #shortcodes & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
     #blog & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
     #page-sample & {
-    	background-image: url('assets/img/parallax.png');
+    	background-image: url('../img/parallax.png');
     }
 
 }
@@ -426,6 +426,11 @@ ul.main-menu {
 			background:$accent;
 			margin-top: 5px;
 		}
+		
+		&.negative:after {
+			background: $secondary-accent;
+		}
+
 	}
 
 	.parallax-section & {

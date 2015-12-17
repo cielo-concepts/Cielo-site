@@ -1,0 +1,25 @@
+extends ./layout.jade
+
+head
+  block title
+    title= projectTitle
+
+body.inner-pages
+  block content
+    div#sb-site
+      include ./includes/portfolio/portfolio-page-intro.jade
+      include ./includes/portfolio/portfolio-wrapper.jade
+      include ./includes/portfolio/portfolio-hidden-data.jade
+
+  block page-js
+    script.
+      $(document).ready(function() {
+        var hiddenData = $('#hidden-data').data();
+
+        $('#portfolio-single .parallax-bg')
+          .css('background-image', 'url(' + hiddenData.titleImageSrc + ')');
+
+        $('#portfolio-single .title').html(hiddenData.titleImageLabel);
+        $('#portfolio-single .subtitle').html(hiddenData.titleImageSubLabel);
+
+      });

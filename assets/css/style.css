@@ -1004,28 +1004,28 @@ ul.main-menu li:hover > ul {
   overflow: hidden;
 }
 #slide-1 .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #slide-2 .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #fun-fact .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #testimonials .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #portfolio-single .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #shortcodes .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #blog .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 #page-sample .parallax-bg {
-  background-image: url("assets/img/parallax.png");
+  background-image: url("../img/parallax.png");
 }
 
 .widget-title {
@@ -1049,6 +1049,9 @@ ul.main-menu li:hover > ul {
   height: 1px;
   background: #99ccff;
   margin-top: 5px;
+}
+.widget-title h2.negative:after {
+  background: #eb7a5c;
 }
 .parallax-section .widget-title h2 {
   color: #fff;
@@ -1419,6 +1422,9 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
   -webkit-transition: width, 250ms;
   transition: width, 250ms;
 }
+.services-type-2 .s-hover.negative {
+  background: #eb7a5c;
+}
 .services-type-2 .s-content {
   position: relative;
   z-index: 13;
@@ -1441,6 +1447,12 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
 .services-type-2 .s-icon i {
   font-size: 18px;
   color: #99ccff;
+}
+.services-type-2 .s-icon.negative {
+  border: 2px solid #eb7a5c;
+}
+.services-type-2 .s-icon.negative i {
+  color: #eb7a5c;
 }
 .services-type-2 .s-title {
   font-size: 16px;
@@ -1526,7 +1538,7 @@ footer.site-footer .contact-form textarea::-webkit-input-placeholder {
 }
 
 .portfolio-header .portfolio-title {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 100;
   margin-bottom: 30px;
   letter-spacing: 6px;

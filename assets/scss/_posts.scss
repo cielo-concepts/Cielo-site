@@ -327,6 +327,10 @@
 		@include transition(width, 250ms);
 	}
 
+	.s-hover.negative {
+		background: $secondary-accent;
+	}
+
 	.s-content {
 		position: relative;
 		z-index: 13;
@@ -347,6 +351,13 @@
 			font-size: 18px;
 			color: $accent;
 		}
+	}
+
+	.s-icon.negative {
+		border: 2px solid $secondary-accent;
+		i {
+			color: $secondary-accent;
+		}		
 	}
 
 	.s-title {
