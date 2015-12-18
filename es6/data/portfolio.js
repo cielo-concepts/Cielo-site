@@ -15,7 +15,7 @@ let portfolio = {
     "images": ["../img/clients/hbr/hbr-home-page.png", "../img/clients/hbr/hbr-store.png", "../img/clients/hbr/hbr-my-library.png"],
     "paragraph1": "<strong>Problem to Solve</strong><br/>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. <br/><strong> How We Did It</strong><br/>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
     "paragraph2": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
-    "technology": ["Custom JavaScript Framework", "Modular Components", "Pattern Lab", "Sass CSS"],
+    "technology": ["Custom JavaScript Framework", "Modular Components", "Pattern Lab", "Sass CSS", "E-Commerce"],
     "relatedItems": [
       {
         "image": "../img/projects/academy-small.png",
@@ -114,7 +114,7 @@ let portfolio = {
     "images": ["../img/clients/perkin-elmer/perkin-elmer-home.png", "../img/clients/perkin-elmer/perkin-elmer-landing.png"],
     "paragraph1": "<strong>Problem to Solve</strong><br/>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. <br/><strong> How We Did It</strong><br/>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
     "paragraph2": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
-    "technology": ["ReactJS", "Flux Pattern", "Gulp", "Pattern Lab", "Sass CSS"],
+    "technology": ["ReactJS + Flux", "NodeJS", "Gulp", "Pattern Lab", "Sass CSS"],
     "relatedItems": [
       {
         "image": "../img/projects/academy-small.png",
