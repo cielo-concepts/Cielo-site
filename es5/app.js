@@ -78,9 +78,13 @@ app.use(function (err, req, res, next) {
   });
 });
 
-app.set('port', process.env.PORT || 1969);
+var server_port = process.env.PORT || 1969;
+var server_host = 'localhost' || '0.0.0.0';
 
-var server = app.listen(app.get('port'), function () {
+app.set('port', server_port);
+app.set('host', server_host);
+
+var server = app.listen(app.get('port'), app.get('host'), function () {
   return console.log('Express is listening on port ' + server.address().port);
 });
 
