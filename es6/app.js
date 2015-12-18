@@ -51,7 +51,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-let server_port = process.env.PORT || 1969;
+let server_port = process.env.PORT || 5000;
 let server_host = 'localhost' || '0.0.0.0';
 
 app.set('port', server_port);

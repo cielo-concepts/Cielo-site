@@ -78,7 +78,7 @@ app.use(function (err, req, res, next) {
   });
 });
 
-var server_port = process.env.PORT || 1969;
+var server_port = process.env.PORT || 5000;
 var server_host = 'localhost' || '0.0.0.0';
 
 app.set('port', server_port);
