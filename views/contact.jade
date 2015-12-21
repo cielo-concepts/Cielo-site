@@ -28,7 +28,7 @@ body.inner-pages
           inputs.each(function(index, el) {
             if ($(el).attr('required') === 'required' && $(el).val().trim().length === 0) {
               var tempObj = {};
-              tempObj.el = el;
+              tempObj.thisEl = el;
               tempObj.errMsg = 'This field is required.'
 
               errors.push(tempObj);
@@ -36,7 +36,7 @@ body.inner-pages
 
             if ($(el).attr('name') === 'email' && $(el).val().trim().indexOf('@') === -1) {
               var tempObj = {};
-              tempObj.el = el;
+              tempObj.thisEl = el;
               tempObj.errMsg = 'Please enter a valid email'
 
               errors.push(tempObj);
@@ -45,7 +45,7 @@ body.inner-pages
 
           if (textarea.val().trim().length === 0) {
             var tempObj = {};
-            tempObj.el = textarea;
+            tempObj.thisEl = textarea;
             tempObj.errMsg = 'This field is required.'
 
             errors.push(tempObj);
@@ -53,7 +53,17 @@ body.inner-pages
 
           if (errors.length > 0) {
             errors.forEach(function(el, index) {
-              $(el.el).addClass('error');
+              var thisEl = $(el.thisEl);
+              var thisElLabel = thisEl.sibling('label');
+
+              var newErrEl = $('div', {
+                className: 'error-msg',
+                text: el.errMsg
+              });
+
+              newErrEl.appendTo(thisElLabel);
+              thisEl.addClass('error');
+
             });
           }
         });      
