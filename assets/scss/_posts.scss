@@ -293,6 +293,14 @@
 		z-index: 12;
 		margin-bottom: 30px;
 		@include box-shadow(0 5px 4px -4px rgba(0,0,0,.08));
+		
+		&.large {
+			min-height: 435px;
+		}
+
+		&.small {
+			min-height: 290px;
+		}
 
 		&:hover {
 			.s-hover {
