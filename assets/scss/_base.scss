@@ -29,6 +29,10 @@ a {
 	&:hover {
 		color: darken($accent, 10%);
 	}
+
+  &.secondary {
+    color: $secondary-accent;
+  }
 }
 
 ::selection { 
