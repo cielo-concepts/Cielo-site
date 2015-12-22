@@ -23,6 +23,7 @@ var router = _express2.default.Router();
 router.get('/', _pages2.default.index);
 router.get('/portfolio/:name', _portfolio2.default.index);
 router.get('/portfolio/detail/:name', _portfolio2.default.detail);
+router.get('/contact', _pages2.default.contact);
 
 module.exports = router;
 //# sourceMappingURL=index.js.map

@@ -25,8 +25,11 @@ body.inner-pages
           var textarea = $(currentForm).find('textarea');
           var errors = [];
 
+          clearErrors(currentForm);
+
           inputs.each(function(index, el) {
-            if ($(el).attr('required') === 'required' && $(el).val().trim().length === 0) {
+            if ($(el).attr('required') === 'required' 
+              && $(el).val().trim().length === 0) {
               var tempObj = {};
               tempObj.thisEl = el;
               tempObj.errMsg = 'This field is required.'
@@ -34,7 +37,9 @@ body.inner-pages
               errors.push(tempObj);
             }
 
-            if ($(el).attr('name') === 'email' && $(el).val().trim().indexOf('@') === -1) {
+            if ($(el).attr('name') === 'email' 
+              && $(el).val().trim().length > 0 
+              && $(el).val().trim().indexOf('@') === -1) {
               var tempObj = {};
               tempObj.thisEl = el;
               tempObj.errMsg = 'Please enter a valid email'
@@ -54,17 +59,21 @@ body.inner-pages
           if (errors.length > 0) {
             errors.forEach(function(el, index) {
               var thisEl = $(el.thisEl);
-              var thisElLabel = thisEl.sibling('label');
+              var thisElLabel = thisEl.siblings('label');
 
-              var newErrEl = $('div', {
-                className: 'error-msg',
+              var newErrEl = $('<div/>', {
+                'class': 'error-msg',
                 text: el.errMsg
               });
 
               newErrEl.appendTo(thisElLabel);
               thisEl.addClass('error');
-
             });
           }
-        });      
+        });
+
+        function clearErrors(formEl) {
+          $(formEl).find('.error-msg').remove();
+          $(formEl).find('input.error, textarea.error').removeClass('error');
+        }      
       })      

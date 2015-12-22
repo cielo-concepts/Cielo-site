@@ -10,5 +10,6 @@ let router = express.Router();
 router.get('/', pages.index);
 router.get('/portfolio/:name', portfolio.index);
 router.get('/portfolio/detail/:name', portfolio.detail);
+router.get('/contact', pages.contact);
 
 module.exports = router;
