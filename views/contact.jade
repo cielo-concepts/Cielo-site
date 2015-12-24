@@ -71,6 +71,16 @@ body.inner-pages
             });
           } else {
             // Submit the form
+            $('#submit').attr({'disabled' : 'true', 'value' : 'Sending' });
+            /* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
+            $.post("/email", $("#contact-form").serialize(), function(response){
+              if(response.result === 'sent'){
+                  //If the email is sent successfully, remove the submit button
+                $('#submit').attr({'disabled' : 'true', 'value' : 'Thank you!' });
+              } else {
+                $('#submit').removeAttr('disabled').attr('value', 'Submit');
+              }
+            });
           }
         });
 

@@ -21,9 +21,12 @@
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
     "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "nodemailer": "^1.10.0",
+    "nodemailer-smtp-transport": "^1.0.4",
     "nodemon": "^1.8.1",
     "serve-favicon": "^2.3.0",
-    "morgan": "^1.6.1"
+    "xoauth2": "^1.1.0"
   },
   "devDependencies": {
     "babel": "^6.1.18",
