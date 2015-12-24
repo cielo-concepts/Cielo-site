@@ -356,6 +356,22 @@ input[type="tel"]:focus,
 textarea:focus {
   border-color: #aaaaaa;
 }
+input[type="text"].error,
+input[type="email"].error,
+input[type="number"].error,
+input[type="date"].error,
+input[type="password"].error,
+input[type="url"].error,
+input[type="tel"].error,
+textarea.error {
+  border: 1px solid #960210;
+}
+
+.error-msg {
+  color: #960210;
+  margin-left: 20px;
+  display: inline-block;
+}
 
 ul {
   margin: 20px 0;
