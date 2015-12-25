@@ -11,6 +11,9 @@ var pages = {
     _fs2.default.readFile(__dirname + '/../../views/index.html', 'utf8', function (err, text) {
       res.send(text);
     });
+  },
+  contact: function contact(req, res) {
+    res.render('contact');
   }
 };
 
