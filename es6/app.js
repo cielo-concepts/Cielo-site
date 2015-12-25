@@ -52,11 +52,8 @@ app.use((err, req, res, next) => {
 });
 
 let server_port = process.env.PORT || 5000;
-let server_host = 'localhost' || '0.0.0.0';
-
 app.set('port', server_port);
-app.set('host', server_host);
 
-let server = app.listen(app.get('port'), app.get('host'), () => console.log('Express is listening on port ' + server.address().port));
+let server = app.listen(app.get('port'), () => console.log('Express is listening on port ' + server.address().port));
 
 module.exports = app;
