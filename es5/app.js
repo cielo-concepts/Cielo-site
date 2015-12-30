@@ -80,9 +80,12 @@ app.use(function (err, req, res, next) {
 });
 
 var server_port = process.env.PORT || 5000;
-app.set('port', server_port);
+var server_host = '0.0.0.0';
 
-var server = app.listen(app.get('port'), function () {
+app.set('port', server_port);
+app.set('host', server_host);
+
+var server = app.listen(app.get('port'), app.get('host'), function () {
   return console.log('Express is listening on port ' + server.address().port);
 });
 
