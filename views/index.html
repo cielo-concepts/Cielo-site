@@ -76,7 +76,6 @@
 									data-start="800" 
 									data-easing="easeOutExpo">
 								 	<h1>We put the technology<br/> behind your ideas</h1>
-								 	<!--span class="caption-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, obcaecati possimus nobis est, vero nulla dolores!</span-->
 								 	<div class="local-scroll caption-btns">
 								 		<a href="#work" class="t-btn t-btn-secondary">View Work</a>
 								 	</div>
@@ -114,7 +113,6 @@
 									data-start="800" 
 									data-easing="easeOutExpo">
 								 	<h1>Prepare your resources<br/> for the future</h1>
-								 	<!--span class="caption-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis.</span-->
 								 	<div class="local-scroll caption-btns">
 								 		<a href="#about" class="t-btn t-btn-secondary">Get Started</a>
 								 	</div>
@@ -445,7 +443,7 @@
 								<h3 class="banner-heading">Interested in working together?</h3>
 								<p class="banner-description">Ready to get started? Send us some information and we will set up a time to chat further.</p>
 								<div class="banner-button local-scroll">
-									<a href="#contact" class="t-btn t-btn-light">Start your project</a>
+									<a href="/contact" class="t-btn t-btn-light">Start your project</a>
 								</div> <!-- .banner-button -->
 							</div> <!-- .banner -->
 						</div> <!-- .col-sm-12 -->
@@ -479,6 +477,7 @@
 					<div class="social-icons mb-2">
 						<a href="mailto:info@cieloconcepts.com" target="_blank" class="fa fa-envelope"></a>
 						<a href="http://twitter.com/cielo_concepts" target="_blank" class="fa fa-twitter"></a>
+						<a href="https://www.youtube.com/channel/UCy-4rvjsIcwbIN_R1DRHokw" target="_blank" class="fa fa-youtube"></a>
 						<a href="https://www.linkedin.com/company/2234229" target="_blank" class="fa fa-linkedin"></a>
 					</div> <!-- .social-icons -->
 					<div class="footer-copyright">
@@ -497,8 +496,8 @@
         <li><a href="#partners">Our Partners</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="http://innovatorylife.com">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <!--li><a href="http://innovatorylife.com">Blog</a></li-->
+        <li><a href="/contact">Contact</a></li>
 			</ul>
 		</nav>
 	</div> <!-- .sb-slidebar -->
@@ -524,9 +523,32 @@
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/slidebars.min.js"></script>
 	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.js"></script>
 	<script type="text/javascript" src="js/theme.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			if ($('.fullscreenbanner').width() < 475) {
+				var increment = 2.5;
+				$('.fullscreenbanner').find('.t-btn-secondary').each(function(idx, el) {
+					var thisFsize = parseInt($(el).css('font-size'), 0);
+					var thisPadding = $(el).css('padding').split(' ');
+					var thisPaddingTopBottom = parseInt(thisPadding[0], 0);
+					var thisPaddingLeftRight = parseInt(thisPadding[1], 0);
+					$(el).css('font-size', thisFsize * (increment - 0.25));
+					$(el).css('padding', thisPaddingTopBottom * increment + 'px ' + thisPaddingLeftRight + 'px');
+				});
 
+				$('.fullscreenbanner').find('.caption-desc').each(function(id, el) {
+					var thisFsize = parseInt($(el).css('font-size'), 0);
+					var thisLineHeight = parseInt($(el).css('line-height'), 0);
+					var fontIncrement = increment - 1;
+
+					$(el).css('font-size', thisFsize * fontIncrement);
+					// $(el).css('line-height', thisLineHeight + fontIncrement);					
+				});
+			}
+		});
+	</script>
 
 </body>
 </html>
