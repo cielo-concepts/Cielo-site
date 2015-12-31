@@ -94,15 +94,15 @@ let portfolio = {
       "subLabel": "Re-Architecture of the UI Stack"
     },
     "projectTitle": "Perkin Elmer \"Elements\" Re-Architecture",
-    "topParagraph": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.",
+    "topParagraph": "Perkin Elmer \"Elements\" application is a cloud based scientific notebook targeted for lab technicians and scientists in the scientific field, universities, and schools. Our goal was to keep the same exceptional product while re-architecting the underlying technology.",
     "client": {
       "name": "Perkin Elmer",
       "category": "Development, Design",
       "url": "http://elements.perkinElmer.com"
     },
     "images": ["../img/clients/perkin-elmer/perkin-elmer-home.png", "../img/clients/perkin-elmer/perkin-elmer-landing.png"],
-    "paragraph1": "<strong>Problem to Solve</strong><br/>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. <br/><strong> How We Did It</strong><br/>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
-    "paragraph2": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
+    "paragraph1": "<strong>Problem to Solve</strong><br/>After completing our intial discovery phase, we came under the conclusion that the existing technology stack of JavaScriptMVC (an old JavaScript framework, predecessor to CanJS), several versions of jQuery, and convoluted implementation of third party software was hindering the ability of the product to expand. As a result of this conclusion, we recommended a new technology stack that will help in the extensibility of the product. ",
+    "paragraph2": "<strong> How We Did It</strong><br/>After evaluating several JS frameworks, we agreed to use ReactJS along with a Flux implementation pattern. To support our effort, we extracted the design and created a complimentery Pattern Lab site. We also implemented Gulp and a NodeJS server to handle some of the ancillary tasks. All these efforts were completed with proper documentation and guidelines for future developers ot learn and use.",
     "technology": ["ReactJS + Flux", "NodeJS", "Gulp", "Pattern Lab", "Sass CSS"],
     "relatedItems": [
       {
@@ -142,15 +142,15 @@ let portfolio = {
       "subLabel": "Small Business Website"
     },
     "projectTitle": "Website Design and Development",
-    "topParagraph": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.",
+    "topParagraph": "Complete Eye Care of Texas is a small optometry located in Plano Texas. Our goal was to help this start up build an online presence.",
     "client": {
       "name": "Complete Eye Care of Texas",
       "category": "Development, Design",
       "url": "http://www.completefamilyeyecaretexas.com/"
     },
     "images": ["../img/clients/complete-eye-care/complete-eye-care-home.png", "../img/clients/complete-eye-care/complete-eye-care-about-us.png", "../img/clients/complete-eye-care/complete-eye-care-office-tour.png"],
-    "paragraph1": "<strong>Problem to Solve</strong><br/>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. <br/><strong> How We Did It</strong><br/>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
-    "paragraph2": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
+    "paragraph1": "<strong>Problem to Solve</strong><br/>This small business needed to get an initial foot hold into the business world. Their commitment to having a solid web presence included creating a website that will include all the relavant information and also integrate with 3rd party software like eye care videos, online forms, and online appointments.",
+    "paragraph2": "<strong>How We Did It</strong><br/>Our discovery and design process helped us in putting together a website that is both user friendly and provide a great user experience.<br/><strong>Next Steps</strong><br/>Although our design has been a success, support of modern devices has been lacking. The complimentary mobile site is causing some maintenance issues. The next steps are to create a new responsive site that will suport all devices and also update some of the 3rd party application integrations.",
     "technology": ["Design", "3rd party integration", "Sass CSS"],
     "relatedItems": [
       {
@@ -190,15 +190,15 @@ let portfolio = {
       "subLabel": "Improvement to existing site"
     },
     "projectTitle": "Morrison's Auto Rite Website",
-    "topParagraph": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.",
+    "topParagraph": "Morrison's Auto Rite is a small auto repair shop located in Jamaica Plain, Massachusetts. Our task was to bring this company's website into the 21 century and provide a modern and responsive site.",
     "client": {
       "name": "Morrison's Auto Rite",
       "category": "Development, Design",
       "url": "http://morrisonsautorite.com"
     },
     "images": ["../img/clients/morrisons-auto-rite/morrisons-home.png", "../img/clients/morrisons-auto-rite/morrisons-about-us.png"],
-    "paragraph1": "<strong>Problem to Solve</strong><br/>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. <br/><strong> How We Did It</strong><br/>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
-    "paragraph2": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
+    "paragraph1": "<strong>Problem to Solve</strong><br/>Morrison's Auto Rite needed to extend their business beyond their old and antiquted website. Their goal was also to convey to their customers the variety of services they provide that extend beyond day to day maintenance. They also wanted to convey information regarding the technology that they provide for their customers.",
+    "paragraph2": "<strong>How We Did It</strong><br/>We had three goals and objectives that we wanted to accomplish with this project, to create a responsive site, to convey all the relevant information, and to provide the client (MorrisonAuto Rite) with the ability to make small changes. As a result, we choose to implement this site using Wordpress. We customized a wordpress theme to meet the needs of the project.",
     "technology": ["Design", "Wordpress", "Responsive Design"],
     "relatedItems": [
       {
