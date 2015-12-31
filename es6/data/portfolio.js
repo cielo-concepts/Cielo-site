@@ -238,15 +238,15 @@ let portfolio = {
       "subLabel": "Migrating from Brochureware to E-Commerce"
     },
     "projectTitle": "Academy Sports E-Commerce",
-    "topParagraph": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.",
+    "topParagraph": "Academy Sports is a brick and mortar sporting good company located in the Southwestern region of the United States. Their desire was to create an e-commerce site that will allow them to showcase their catalog of items and to be able to sell these items online.",
     "client": {
       "name": "Academy Sports",
       "category": "Development",
       "url": "http://academy.com"
     },
     "images": ["../img/clients/academy/academy-product-page.png", "../img/clients/academy/academy-checkout-shipping.png", "../img/clients/academy/academy-checkout-shipping-review.png"],
-    "paragraph1": "<strong>Problem to Solve</strong><br/>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. <br/><strong> How We Did It</strong><br/>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
-    "paragraph2": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
+    "paragraph1": "<strong>Problem to Solve</strong><br/>In 201 Academy Sports had a <a href=\"http://searchsoa.techtarget.com/definition/brochureware\" class=\"secondary\" target=\"_blank\">brochureware site</a>. The goal was to create a new e-commerce site. In collaboration with Isobar, and Avnet Services, we were able to provide Academy Sports with a state of the art e-commerce site.",
+    "paragraph2": "<strong>How We Did It</strong><br/>The main technology behind this e-commerce platform was WebSpher Commerce Server (WCS). Our goal was to take advantage of all the out-of-the-box technoology that was provided by WCS and also extend them further and create a customized site for the client. We also incorporated with several 3rd party technologies like tax calculation and shipping estimation. We also created customized invoices/receipts using iText to convert the transactions to printable PDFs.",
     "technology": ["E-Commerce", "Development", "User Interface Development"],
     "relatedItems": [
       {
