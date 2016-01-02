@@ -272,14 +272,80 @@ let portfolio = {
       "prev": {
         "label": "Morrison's Auto Rite",
         "url": "/portfolio/morrisons-auto-rite"
+      },
+      "next": {
+        "label": "Pattern Lab Course",
+        "url": "/portfolio/pattern-lab-course"
       }
     }
   },
   "pattern-lab-course": {
-
+    "titleImage": {
+      "src": "../img/clients/pattern-lab-course/atomic-design-title-image.png",
+      "label": "Pattern Lab Course",
+      "subLabel": "Incorporating Atomic Design and Pattern Lab"
+    },
+    "projectTitle": "Atomic Design and Pattern Lab",
+    "topParagraph": "Pattern Lab is a collection of tools to help you create atomic design systems.",
+    "client": {
+      "name": "Pattern Lab Course",
+      "category": "Training",
+      "cost": "$1,000 per person"
+    },
+    "images": ["../img/clients/pattern-lab-course/pattern-lab-description.png", "../img/clients/pattern-lab-course/pattern-lab-homepage.png", "../img/clients/pattern-lab-course/pattern-lab-homepage-medium.png", "../img/clients/pattern-lab-course/pattern-lab-homepage-small.png"],
+    "paragraph1": "<strong>Problem to Solve</strong><br/>Communicating the requirements from product owner/manager to designer to developer has been one of the most difficult workflows in development cycles. There are several reasons for this sometimes and unnecessarily contentious communication channel and relationship. The reasons range from stakeholders speaking different languages (some in code and some in colors and fonts), working in silos, ever-changing requirements not communicated properly from design to development or vice versa, and lacking transparency to design or development.",
+    "paragraph2": "<strong>How We Can Help</strong><br/>This course will start by taking an existing design and breaking it down using \"Atomic Design\" principles. Then we will learn how to take the modular components that have been designed and create patterns in \"Pattern Lab\". In the last exercise, we will use the HTML and CSS that is the bu-product of our patterns and see how we can place them in a JavaScript framework.",
+    "technology": ["Atomic Design", "Pattern Lab", "Sass CSS", "OOCSS", "BEM"],
+    "relatedItems": [
+      {
+        "image": "../img/projects/evaluating-js.png",
+        "url": "/portfolio/evaluating-frameworks",
+        "label": "Evaluating JS Frameworks",
+        "subLabel": "Training"
+      }
+    ],
+    "navigation": {
+      "next": {
+        "label": "Evaluating JS Frameworks",
+        "url": "/portfolio/evaluating-frameworks"
+      },
+      "prev": {
+        "label": "Academy Sports E-Commerce",
+        "url": "/portfolio/academy-sports"
+      }
+    }
   },
   "evaluating-frameworks": {
-
+    "titleImage": {
+      "src": "../img/clients/evaluating-frameworks/evaluating-frameworks-title-image.png",
+      "label": "Evaluating JavaScript Frameworks",
+      "subLabel": "Which JS framework is right for my project?"
+    },
+    "projectTitle": "Wading in the pool of JS Frameworks",
+    "topParagraph": "Most programming languages support a small number of popular, stable application frameworks. Objective-C and Swift apps use Apple’s excellent Cocoa framework. Ruby apps more often than not use Rails. Java has a handful of established web app frameworks, and they come and go relatively slowly. In the meantime, the latest and greatest JavaScript framework comes around every sixteen minutes. This course will help in looking at the different aspects of selected frameworks and evaluating the fit within the project.",
+    "client": {
+      "name": "Evaluating JavaScript Frameworks",
+      "category": "Training",
+      "cost": "$1,000 per person"
+    },
+    "images": ["../img/clients/evaluating-frameworks/supported-tech.png"],
+    "paragraph1": "<strong>Problem to Solve</strong><br/>One of the first decisions that will need to be made before starting any project is how to write the JavaScript, how to structure it, how to intereact with other applications, etc. The answer to \"how to write the JS?\" will inevitably lead the developer to a variety of JS frameworks. This is a course that can help with this decision process.",
+    "paragraph2": "<strong>How We Can Help</strong><br/>For this course, we have created an open API that can be accessed by authorized applications. The course will allow the user to take a designed application and interact with this open API using several frameworks. As the developer becomes familiar with these frameworks, they will understand the workings of each and have a better grasp on which may work for their project.",
+    "technology": ["Basic REST API", "ReactJS + Flux", "AngularJS", "EmberJS"],
+    "relatedItems": [
+      {
+        "image": "../img/projects/pattern-lab.png",
+        "url": "/portfolio/pattern-lab-course",
+        "label": "Pattern Lab Course",
+        "subLabel": "Training"
+      }
+    ],
+    "navigation": {
+      "prev": {
+        "label": "Pattern Lab Course",
+        "url": "/portfolio/pattern-lab-course"
+      }
+    }
   }
 };
 
