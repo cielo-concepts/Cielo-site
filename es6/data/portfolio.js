@@ -245,7 +245,7 @@ let portfolio = {
       "url": "http://academy.com"
     },
     "images": ["../img/clients/academy/academy-product-page.png", "../img/clients/academy/academy-checkout-shipping.png", "../img/clients/academy/academy-checkout-shipping-review.png"],
-    "paragraph1": "<strong>Problem to Solve</strong><br/>In 201 Academy Sports had a <a href=\"http://searchsoa.techtarget.com/definition/brochureware\" class=\"secondary\" target=\"_blank\">brochureware site</a>. The goal was to create a new e-commerce site. In collaboration with Isobar, and Avnet Services, we were able to provide Academy Sports with a state of the art e-commerce site.",
+    "paragraph1": "<strong>Problem to Solve</strong><br/>In 2010 Academy Sports had a <a href=\"http://searchsoa.techtarget.com/definition/brochureware\" class=\"secondary\" target=\"_blank\">brochureware site</a>. The goal was to create a new e-commerce site. In collaboration with Isobar, and Avnet Services, we were able to provide Academy Sports with a state of the art e-commerce site.",
     "paragraph2": "<strong>How We Did It</strong><br/>The main technology behind this e-commerce platform was WebSpher Commerce Server (WCS). Our goal was to take advantage of all the out-of-the-box technoology that was provided by WCS and also extend them further and create a customized site for the client. We also incorporated with several 3rd party technologies like tax calculation and shipping estimation. We also created customized invoices/receipts using iText to convert the transactions to printable PDFs.",
     "technology": ["E-Commerce", "Development", "User Interface Development"],
     "relatedItems": [
