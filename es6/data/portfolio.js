@@ -1,5 +1,8 @@
 let portfolio = {
   "hbr": {
+    "seo": {
+      "description": "HBR is a content heavy site. Modular development using custom javascript framework and pattern lab helped flourish the new design, content, & e-commerce"
+    },
     "titleImage": {
       "src": "../img/clients/hbr/hbr-title-image.png",
       "label": "Harvard Business Review",
@@ -44,6 +47,9 @@ let portfolio = {
     }
   },
   "humedica": {
+    "seo": {
+      "description": ""
+    },
     "titleImage": {
       "src": "../img/parallax.png",
       "label": "Humedica Architecture Migration",
@@ -88,6 +94,9 @@ let portfolio = {
     }
   },
   "perkin-elmer": {
+    "seo": {
+      "description": "Perkin Elmer 'Elements' had an aging front end architecture. A complete re-architecture of the front end framework using ReactJS, Flux pattern, Pattern Lab, and Gulp."
+    },
     "titleImage": {
       "src": "../img/clients/perkin-elmer/perkin-elmer-responsive.png",
       "label": "Perkin Elmer \"Elements\"",
@@ -136,6 +145,9 @@ let portfolio = {
     }
   },
   "complete-eye-care": {
+    "seo": {
+      "description": "Creating an online presence for Complete Family Eye Care of Texas required our design and development skills combined. This site was created using simple HTML & CSS & 3rd party applications integration."
+    },
     "titleImage": {
       "src": "../img/clients/complete-eye-care/complete-eye-care-title-image.png",
       "label": "Complete Eye Care of Texas",
@@ -184,6 +196,9 @@ let portfolio = {
     }
   },
   "morrisons-auto-rite": {
+    "seo": {
+      "description": "The site for Morrison Auto Rite required a responsive design using Wordpress to showcase the business so that is can provide information and promote the business in the neighborhood."
+    },
     "titleImage": {
       "src": "../img/clients/morrisons-auto-rite/morrisons-title-image.png",
       "label": "Morrison's Auto Rite",
@@ -232,6 +247,9 @@ let portfolio = {
     }
   },
   "academy-sports": {
+    "seo": {
+      "description": "Moving Academy Sports from brochureware to a functional e-commerce site required our development & user experience skills combined to ensure a properly functional commerce site"
+    },
     "titleImage": {
       "src": "../img/clients/academy/academy-title-image.png",
       "label": "Academy Sports E-Commerce",
@@ -280,6 +298,9 @@ let portfolio = {
     }
   },
   "pattern-lab-course": {
+    "seo": {
+      "description": "This training course for Pattern Lab shows developers & designers the beenfits of incorporating this tool in the workflow. It also demonstrates the benefits of Atomic Design"
+    },
     "titleImage": {
       "src": "../img/clients/pattern-lab-course/atomic-design-title-image.png",
       "label": "Pattern Lab Course",
@@ -316,6 +337,9 @@ let portfolio = {
     }
   },
   "evaluating-frameworks": {
+    "seo": {
+      "description": "This training course helps developers and product managers navigate the large number of JavaScript frameworks. The course begins with interviews and ends with POC of some of the frameworks."
+    },
     "titleImage": {
       "src": "../img/clients/evaluating-frameworks/evaluating-frameworks-title-image.png",
       "label": "Evaluating JavaScript Frameworks",
