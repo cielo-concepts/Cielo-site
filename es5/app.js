@@ -32,10 +32,6 @@ var _index = require('./routes/index');
 
 var _index2 = _interopRequireDefault(_index);
 
-var _portfolio = require('./routes/portfolio');
-
-var _portfolio2 = _interopRequireDefault(_portfolio);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //using let
@@ -53,6 +49,8 @@ app.use(_express2.default.static(_path2.default.join(__dirname, '../assets')));
 app.use('/', _index2.default);
 app.use('/portfolio/:name', _index2.default);
 app.use('/email', _index2.default);
+app.use('/blog', _index2.default);
+app.use('/blog/:id', _index2.default);
 
 // using arrow syntax
 app.use(function (req, res, next) {

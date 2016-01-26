@@ -35,7 +35,6 @@ var portfolio = {
   detail: function detail(req, res) {
     var name = req.params.name;
     var portfolioDetail = _portfolio2.default[name];
-    console.log(portfolioDetail);
     res.json(portfolioDetail);
   }
 };

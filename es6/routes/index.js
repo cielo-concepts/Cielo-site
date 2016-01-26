@@ -3,6 +3,7 @@
 import express    from 'express';
 import pages      from './pages';
 import portfolio  from './portfolio';
+import blog       from './blog';
 import fs         from 'fs';
 import mailer     from 'nodemailer';
 import smtpTransport from 'nodemailer-smtp-transport';
@@ -14,6 +15,8 @@ router.get('/', pages.index);
 router.get('/portfolio/:name', portfolio.index);
 router.get('/portfolio/detail/:name', portfolio.detail);
 router.get('/contact', pages.contact);
+router.get('/blog', blog.index);
+router.get('/blog/:id', blog.posts);
 
 // let generator = oauth.createXOAuth2Generator({
 //   clientId: '478084717843-ur43h88t1mpc71ss8pn5g08a414j0ho9.apps.googleusercontent.com',

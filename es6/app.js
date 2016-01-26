@@ -8,7 +8,6 @@ import bodyParser   from 'body-parser';
 import fs           from 'fs';
 
 import routes       from './routes/index';
-import portfolio    from './routes/portfolio';
 
 //using let
 let app = express();
@@ -26,6 +25,8 @@ app.use(express.static(path.join(__dirname, '../assets')));
 app.use('/', routes);
 app.use('/portfolio/:name', routes);
 app.use('/email', routes);
+app.use('/blog', routes);
+app.use('/blog/:id', routes);
 
 // using arrow syntax
 app.use((req, res, next) => {
