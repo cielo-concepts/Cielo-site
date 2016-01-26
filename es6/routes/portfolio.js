@@ -22,7 +22,6 @@ let portfolio = {
 	detail: ((req, res) => {
     let name = req.params.name;
     let portfolioDetail = data[name];
-    console.log(portfolioDetail);
     res.json(portfolioDetail);
 	})
 };

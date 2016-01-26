@@ -12,6 +12,10 @@ var _portfolio = require('./portfolio');
 
 var _portfolio2 = _interopRequireDefault(_portfolio);
 
+var _blog = require('./blog');
+
+var _blog2 = _interopRequireDefault(_blog);
+
 var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
@@ -34,6 +38,8 @@ router.get('/', _pages2.default.index);
 router.get('/portfolio/:name', _portfolio2.default.index);
 router.get('/portfolio/detail/:name', _portfolio2.default.detail);
 router.get('/contact', _pages2.default.contact);
+router.get('/blog', _blog2.default.index);
+router.get('/blog/:id', _blog2.default.posts);
 
 // let generator = oauth.createXOAuth2Generator({
 //   clientId: '478084717843-ur43h88t1mpc71ss8pn5g08a414j0ho9.apps.googleusercontent.com',
