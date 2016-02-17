@@ -24,6 +24,12 @@ router.get('/blog/:id', blog.posts);
 //   refreshToken: '1/w1AJNkOERoqJSIN9rwfNaaSJ8w94k-NKV9UjvUkoZi0'
 // });
 
+router.get('/announcement', (req,res) => {
+    fs.readFile(__dirname + '/../../announcement/index.html', 'utf8', (err, text) => {
+      res.send(text);
+    })
+});
+
 router.post('/email', (req, res) => {
   let returnObj = {
       result: 'sent'

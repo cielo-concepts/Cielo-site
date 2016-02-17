@@ -27,6 +27,7 @@ app.use('/portfolio/:name', routes);
 app.use('/email', routes);
 app.use('/blog', routes);
 app.use('/blog/:id', routes);
+app.use('/announcement', routes);
 
 // using arrow syntax
 app.use((req, res, next) => {
