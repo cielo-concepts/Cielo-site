@@ -51,6 +51,7 @@ app.use('/portfolio/:name', _index2.default);
 app.use('/email', _index2.default);
 app.use('/blog', _index2.default);
 app.use('/blog/:id', _index2.default);
+app.use('/announcement', _index2.default);
 
 // using arrow syntax
 app.use(function (req, res, next) {

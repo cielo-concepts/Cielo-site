@@ -47,6 +47,12 @@ router.get('/blog/:id', _blog2.default.posts);
 //   refreshToken: '1/w1AJNkOERoqJSIN9rwfNaaSJ8w94k-NKV9UjvUkoZi0'
 // });
 
+router.get('/announcement', function (req, res) {
+  _fs2.default.readFile(__dirname + '/../../announcement/index.html', 'utf8', function (err, text) {
+    res.send(text);
+  });
+});
+
 router.post('/email', function (req, res) {
   var returnObj = {
     result: 'sent'
