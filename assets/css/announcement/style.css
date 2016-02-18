@@ -173,23 +173,23 @@ h4 {
 /* ================================= */
 
 #left1 {
-	background: url('../../img/Pic-1-left.png')no-repeat top right;
-	background-size: cover;
+  background: url('../../img/Pic-1-left.png')no-repeat top right;
+  background-size: cover;
 }
 
 #right1 {
-	background: url('../../img/Pic-1-right.png')no-repeat top left;
-	background-size: cover;
+  background: url('../../img/Pic-1-right.png')no-repeat top left;
+  background-size: cover;
 }
 
 #left2 {
-	background: url('../../img/Pic-2-left.png')no-repeat top right;
-	background-size: cover;
+  background: url('../../img/Pic-2-left.png')no-repeat top right;
+  background-size: cover;
 }
 
 #right2 {
-	background: url('../../img/Pic-2-right.png')no-repeat top right;
-	background-size: cover;
+  background: url('../../img/Pic-2-right.png')no-repeat top right;
+  background-size: cover;
 }
 
 #left3 {
@@ -812,6 +812,11 @@ bouncedelay {
 			width: 150%;
 			top: auto;
 		}
+
+		#subscribe h2 {
+			font-size: 1em;
+			padding-top: 3.5em;
+		}
 		
 		#principal-carousel {
 			position: absolute;
@@ -1165,7 +1170,7 @@ bouncedelay {
 
 /* *=*=*=*=*=*=*=*=*=* Phone portrait *=*=*=*=*=*=*=*=*=* */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) /*and (orientation : portrait)*/ {
 
 		.container {
 			width: 100%;
@@ -1325,6 +1330,10 @@ bouncedelay {
 			padding-bottom: 10px;
 		}
 		
+		#subscribe h2 {
+			font-size: 1em;
+		}
+
 		.main-part-one {
 			position: absolute;
 			width: 200%;
@@ -1467,7 +1476,7 @@ bouncedelay {
 		
 /* *=*=*=*=*=*=*=*=*=* Phone landscape *=*=*=*=*=*=*=*=*=* */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) /*and (orientation : landscape) */{
 
 		.container {
 			width: 100%;
@@ -1658,6 +1667,10 @@ bouncedelay {
 			padding-bottom: 10px;
 		}
 		
+		#subscribe h2 {
+			font-size: 1em;
+		}
+
 		.main-part-one {
 			position: absolute;
 			width: 100%;

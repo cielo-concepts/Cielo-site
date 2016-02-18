@@ -1325,6 +1325,10 @@ bouncedelay {
 			padding-bottom: 10px;
 		}
 		
+		#subscribe h2 {
+			font-size: 1em;
+		}
+
 		.main-part-one {
 			position: absolute;
 			width: 200%;
@@ -1658,6 +1662,10 @@ bouncedelay {
 			padding-bottom: 10px;
 		}
 		
+		#subscribe h2 {
+			font-size: 1em;
+		}
+
 		.main-part-one {
 			position: absolute;
 			width: 100%;
