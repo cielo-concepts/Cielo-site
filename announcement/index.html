@@ -53,11 +53,11 @@
                     <div class="col-md-offset-2 col-md-8 col-xs-12 col-xs-offset-0 animated opacity-0" id="text-construction-2">
 
                         <!-- LOGO -->
-                        <span style="margin-right: 20px;"><img src="img/logo2.png" alt="" height="150" /></span>
+                        <span style="margin-right: 20px;"><img id="cielo-logo" src="img/logo2.png" alt="" height="150" /></span>
 
                         <span><i class="fa fa-plus" style="font-size: 100px"></i></span>
                         
-                        <span style="margin-left: 20px;"><img src="img/GearBrain.png" alt="" height="100" /></span>
+                        <span style="margin-left: 20px;"><img id="thoughtsynth-logo" src="img/GearBrain.png" alt="" height="100" /></span>
 
                         <h4><strong>Cielo Concepts Inc</strong> and <strong>ThoughtSynth LLC</strong> have merged to create a new entity, <strong>Iotopia Solutions Inc.</strong> Our expansion allows us to provide the same level of service in the development section with the ability to expand our training and IoT/hardware development.</h4>
                             
@@ -67,7 +67,7 @@
                                 
                         <!-- START COUNTDOWN -->
                         <div id="countdown_dashboard" class="animated-quick fadeIn">
-                            <img class="img-responsive" src="img/iotopia-logo-multicolor2-dropshadow.png" alt="" height="125" />
+                            <a href="http://iotopia-solutions.com"><img id="iotopia-logo" src="img/iotopia-logo-multicolor2-dropshadow.png" alt="" height="125" /></a>
                             
                             <!-- DAYS -->
                         </div>
@@ -245,7 +245,29 @@
     <script>
     jQuery(document).ready(function() {
         "use strict";
-            $("#notifyMe").notifyMe();
+        $("#notifyMe").notifyMe();
+
+        if($(window).innerHeight() < 650) {
+            $("#myContainer .ms-left").css("width", "100%");
+            $("#left1 .main-part-one").css("margin-top", "45px");
+            $("#left2 .main-part-one").css("margin-top", "55px");
+            $("#myContainer .ms-right").hide();
+
+            $("#myContainer h4").css("font-size", "1.25em").css("line-height", "1.5em");
+            $("#myContainer h2").css("font-size", "1.5em").css("line-height", "1.75em");
+            $("#myContainer .about-section p").css("font-size", "1em").css("line-height", "1.25em");
+
+            $("#cielo-logo").height(75);
+            $("#cielo-logo").width(47);
+
+            $("#thoughtsynth-logo").height(65);
+            $("#thoughtsynth-logo").width(80);
+
+            $("#iotopia-logo").height(65);
+            $("#iotopia-logo").width(188);
+
+            $("#left1 .fa-plus").css("font-size", "2em");
+        }
     });
     </script>
 
